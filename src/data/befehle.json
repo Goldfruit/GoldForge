@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Docker Build",
+      "command": "docker-compose up --build",
+      "category": "Docker",
+      "description": "Baut den Container neu und startet ihn.",
+      "info": "Nützlich nach Code-Änderungen oder Cache-Problemen."
+    },
+    {
+      "name": "Git Push",
+      "command": "git push origin main",
+      "category": "Git",
+      "description": "Pusht lokale Änderungen auf den Remote-Branch main.",
+      "info": "Vorher sollte man committen und pullen, um Konflikte zu vermeiden."
+    }
+  ]
+  
