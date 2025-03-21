@@ -1,17 +1,18 @@
 befehlsbibliothek/
 ├── .github/
-│    └── workflows/
-│         └── deploy.yml       <- (GitHub Actions Workflow für Deployment)
+│   └── workflows/
+│       └── deploy.yml        # GitHub Actions Workflow für Deployment
 ├── public/
-│    └── vite.svg
+│   └── vite.svg
 ├── src/
-│    ├── assets/
-│    ├── components/
-│    │    └── CommandItem.vue
-│    ├── data/
-│    │    └── befehle.json     <- Beispiel-Befehlsdaten
-│    ├── App.vue
-│    └── main.js
+│   ├── assets/
+│   │   └── styles.css        # Globale CSS-Datei
+│   ├── components/
+│   │   └── CommandItem.vue
+│   ├── data/
+│   │   └── befehle.json      # Beispiel-Befehlsdaten
+│   ├── App.vue
+│   └── main.js
 ├── .gitignore
 ├── index.html
 ├── package.json

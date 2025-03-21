@@ -15,7 +15,9 @@ import commands from "./data/befehle.json";
 
 export default {
   name: "App",
-  components: { CommandItem },
+  components: {
+    CommandItem
+  },
   data() {
     return {
       commands
@@ -24,15 +26,4 @@ export default {
 };
 </script>
 
-<style>
-main {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 2rem;
-  font-family: sans-serif;
-}
-h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-</style>
+<style src="./assets/styles.css"></style>

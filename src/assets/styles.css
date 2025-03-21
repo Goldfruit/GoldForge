@@ -1,0 +1,121 @@
+/* src/assets/styles.css */
+.tippy-box[data-theme~='myCustomTheme'] {
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  /* styles.css */
+/* -----------------------------------
+   1) Google Fonts (optional)
+   -----------------------------------
+   Füge diesen Link in deine index.html ein:
+   <link rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+   Dann wird die Schriftart 'Poppins' verfügbar.
+*/
+
+/* -----------------------------------
+   2) Grund-Layout & Hintergrund
+   ----------------------------------- */
+body {
+    margin: 0;
+    /* Schicker Farbverlauf (Farbwerte anpassen, wenn du magst) */
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    font-family: 'Poppins', sans-serif; /* Funktioniert nur, wenn Google Fonts eingebunden sind */
+  }
+  
+  main {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem;
+  }
+  
+  /* -----------------------------------
+     3) Überschriften & Titel
+     ----------------------------------- */
+  h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  
+  /* -----------------------------------
+     4) Command-Box (Karten-Stil)
+     ----------------------------------- */
+  .command-box {
+    background: rgba(255, 255, 255, 0.8); /* halbtransparentes Weiß */
+    backdrop-filter: blur(5px);           /* Glas-Effekt */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    /* Für sanftes Anheben beim Hover */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .command-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Alternative mit Keyframe-Animation (auskommentieren, wenn du es ausprobieren willst):
+       animation: funkyPulse 0.5s alternate; */
+  }
+  
+  /* -----------------------------------
+     5) Buttons
+     ----------------------------------- */
+  button {
+    background: #fff;
+    border: 2px solid #ff8a00;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  button:hover {
+    background: #ff8a00;
+    color: #fff;
+  }
+  
+  /* -----------------------------------
+     6) Kleinigkeiten & Tooltip-Icons
+     ----------------------------------- */
+  .info-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 20px;
+    background: #fff;
+    font-size: 14px;
+  }
+  .tooltip {
+    position: absolute;
+    right: 2.5rem;
+    top: 1rem;
+    background: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  /* -----------------------------------
+     7) Keyframe-Animation (optional)
+     ----------------------------------- */
+  @keyframes funkyPulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
