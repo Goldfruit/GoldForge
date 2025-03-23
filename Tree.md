@@ -13,6 +13,12 @@ befehlsbibliothek/
 │   │   └── befehle.json      # Beispiel-Befehlsdaten
 │   ├── App.vue
 │   └── main.js
+├── goldanker_commands/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── main.py           <-- FastAPI-Code
+│   ├── befehle.json      <-- Serverseitig gespeichert
+│   └── ...
 ├── .gitignore
 ├── index.html
 ├── package.json
