@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  goldanker_commands:
+    build: ./goldanker_commands
+    container_name: goldanker_commands
+    environment:
+      - COMMANDS_JSON_PATH=/app/befehle.json
+    volumes:
+      - ./goldanker_commands/befehle.json:/app/befehle.json
+    ports:
+      - "8000:8000"
+    # depends_on, networks, etc.
