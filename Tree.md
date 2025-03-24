@@ -1,10 +1,11 @@
-```plaintext
 .
 ├── docker-compose.yml
 ├── .gitignore
 ├── goldanker_commands
-│   ├── Dockerflile
-│   └── main.py
+│   ├── befehle.json
+│   ├── Dockerfile
+│   ├── main.py
+│   └── requirements.txt
 ├── index.html
 ├── nächste_Schritte
 │   ├── Roadmap_v1.md
@@ -20,10 +21,8 @@
 │   ├── components
 │   │   └── CommandItem.vue
 │   ├── data
-│   │   └── befehle.json
 │   └── main.js
 ├── Tree.md
 └── vite.config.js
 
-7 directories, 18 files
-```
+7 directories, 19 files
