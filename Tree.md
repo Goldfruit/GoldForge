@@ -1,3 +1,4 @@
+```plaintext
 .
 ├── docker-compose.yml
 ├── .gitignore
@@ -25,3 +26,4 @@
 └── vite.config.js
 
 7 directories, 18 files
+```
