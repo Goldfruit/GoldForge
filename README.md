@@ -78,14 +78,61 @@ Eine **Progressive Web App (PWA)** zur **Verwaltung von Befehlen** (z. B. Docker
 ## 3. Goldanker CommandService (Beispiel in FastAPI)
 
 ### 3.1 Aufbau
-```
-goldanker_commands/
- ├── Dockerfile
- ├── requirements.txt
- ├── main.py           <-- FastAPI-Code
- ├── befehle.json      <-- Serverseitig gespeichert
- └── ...
-```
+
+<details open>
+  <summary><strong>befehlsbibliothek/</strong></summary>
+
+  <details open>
+    <summary>.github/</summary>
+    <details><summary>workflows/</summary>
+      <ul><li><code>deploy.yml</code> – GitHub Actions Workflow: automatisches Deployment auf GitHub Pages</li></ul>
+    </details>
+  </details>
+
+  <details>
+    <summary>public/</summary>
+    <ul><li><code>vite.svg</code> – Platzhalter-/Standard-Icon für die App</li></ul>
+  </details>
+
+  <details>
+    <summary>src/</summary>
+    <details>
+      <summary>assets/</summary>
+      <ul><li><code>styles.css</code> – Globale CSS-Stile</li></ul>
+    </details>
+    <details>
+      <summary>components/</summary>
+      <ul><li><code>CommandItem.vue</code> – Kachel-Komponente</li></ul>
+    </details>
+    <details>
+      <summary>data/</summary>
+      <ul><li><code>befehle.json</code> – JSON-Daten (Frontend)</li></ul>
+    </details>
+    <ul>
+      <li><code>App.vue</code> – Haupt-Komponente</li>
+      <li><code>main.js</code> – Einstiegspunkt für Vue-App</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>goldanker_commands/</summary>
+    <ul>
+      <li><code>Dockerfile</code> – Build-Anleitung für Backend</li>
+      <li><code>requirements.txt</code> – Python-Abhängigkeiten</li>
+      <li><code>main.py</code> – FastAPI Backend</li>
+      <li><code>befehle.json</code> – Serverseitige Daten</li>
+    </ul>
+  </details>
+
+<ul>
+    <li><code>.gitignore</code> – Ignorierte Dateien</li>
+    <li><code>index.html</code> – App Startpunkt</li>
+    <li><code>package.json</code> – Node-Projektkonfiguration</li>
+    <li><code>README.md</code> – Projektbeschreibung</li>
+    <li><code>vite.config.js</code> – Vite-Konfiguration</li>
+  </ul>
+</details>
+
 
 ### 3.2 Dockerfile
 ```Dockerfile
