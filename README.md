@@ -1,4 +1,4 @@
-Hier folgt die finale, zusammengeführte Version der README.md, die sämtliche Inhalte aus deinen Dateien (Goldforge_new.md, GoldeForge.md, workflow_upgrade.md, Roadmap_v2.md und Roadmap_v1.md) integriert. Ich habe die einzelnen Themenbereiche strukturiert, sodass du einen durchgängigen Überblick über Architektur, Workflow, Implementierung, Kategorien, CI/CD und die zukünftigen Roadmap-Schritte erhältst.
+
 
 ---
 
