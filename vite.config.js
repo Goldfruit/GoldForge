@@ -29,5 +29,6 @@ export default defineConfig({
       }
     })
   ],
-  base: "./", // Wichtig für relative Pfade, gerade wenn du GitHub Pages nutzen willst
+  base: "/GoldForge/"
+
 });
