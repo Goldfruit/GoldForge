@@ -4,7 +4,7 @@ name: Update Tree.md
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "dev" ]
 
 jobs:
   update-tree:
