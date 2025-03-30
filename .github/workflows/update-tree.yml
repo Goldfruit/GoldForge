@@ -1,0 +1,40 @@
+# .github/workflows/update-tree.yml
+
+name: Update Tree.md
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  update-tree:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Install tree
+        run: sudo apt-get install tree
+
+      - name: Generate Tree.md
+        run: |
+          echo '```plaintext' > Tree.md
+          tree -a -I "node_modules|dist|target|.git" >> Tree.md
+          echo '```' >> Tree.md
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Commit changes
+        run: |
+          if git diff --exit-code Tree.md; then
+            echo "No changes in Tree.md. Abbruch."
+            exit 0
+          fi
+
+          git add Tree.md
+          git commit -m "Update Tree.md [skip ci]"
+          git push
