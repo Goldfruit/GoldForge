@@ -1,34 +1,38 @@
-~/Goldfruit/befehlsbibliothek
-├── .github/
-│   └── workflows/
-│       └── deploy.yml
+```
+.
+├── .github
+│   ├── workflow
+│   │   ├── deploy.yml
+│   │   └── tree.yml
+│   └── workflows
+│       ├── deploy.yml
+│       └── tree.yml
 ├── .gitignore
-├── docker-compose.yml
-├── index.html
-├── package.json
-├── vite.config.js
 ├── README.md
-├── src/
-│   ├── App.vue
-│   ├── assets/
-│   │   └── styles.css
-│   ├── components/
-│   │   └── CommandItem.vue
-│   ├── data/
-│   └── main.js
-├── goldanker_commands/
-│   ├── Dockerfile
-│   ├── befehle.json
-│   ├── main.py
-│   └── requirements.txt
-├── docs/
-│   ├── CONTRIBUTING.md
-│   └── Tree.md
-├── nächste_Schritte/
-│   ├── GoldForge_aktuel_v1.md
-│   ├── GoldeForge.md
-│   ├── Goldforge_new.md
-│   ├── Roadmap_v1.md
-│   ├── Roadmap_v2.md
-│   └── workflow_upgrade.md
-└── LICENS
+├── Tree.md
+├── docker-compose.yml
+├── goldanker_commands
+│   ├── Dockerfile
+│   ├── befehle.json
+│   ├── main.py
+│   └── requirements.txt
+├── index.html
+├── nächste_Schritte
+│   ├── Contributing_guidelinie_GoldForge.md
+│   ├── Roadmap_v1.md
+│   ├── Roadmap_v2.md
+│   ├── Treebefehl.md
+│   └── workflow_upgrade.md
+├── package-lock.json
+├── package.json
+├── src
+│   ├── App.vue
+│   ├── assets
+│   │   └── styles.css
+│   ├── components
+│   │   └── CommandItem.vue
+│   └── main.js
+└── vite.config.js
+
+9 directories, 25 files
+```
