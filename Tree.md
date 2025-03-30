@@ -31,4 +31,4 @@
 │   ├── Roadmap_v1.md
 │   ├── Roadmap_v2.md
 │   └── workflow_upgrade.md
-└── LICENSE
+└── LICENS
