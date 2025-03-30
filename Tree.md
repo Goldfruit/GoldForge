@@ -1,9 +1,6 @@
 ```
 .
 ├── .github
-│   ├── workflow
-│   │   ├── deploy.yml
-│   │   └── tree.yml
 │   └── workflows
 │       ├── deploy.yml
 │       └── tree.yml
@@ -34,5 +31,5 @@
 │   └── main.js
 └── vite.config.js
 
-9 directories, 25 files
+8 directories, 23 files
 ```
