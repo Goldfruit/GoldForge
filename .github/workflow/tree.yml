@@ -4,25 +4,30 @@ on:
   push:
     branches: [ "dev" ]
 
+permissions:
+  contents: write
+
 jobs:
   update-tree:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-    - name: Generate tree structure
-      run: |
-        echo '```' > Tree.md
-        tree -I 'node_modules|.git|dist' -a >> Tree.md
-        echo '```' >> Tree.md
+      - name: Generate tree structure
+        run: |
+          echo '```' > Tree.md
+          tree -I 'node_modules|.git|dist' -a >> Tree.md
+          echo '```' >> Tree.md
 
-    - name: Commit & push Tree.md
-      run: |
-        git config --global user.name "GoldForge Bot"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/Goldfruit/GoldForge.git
-        git add Tree.md
-        git commit -m "ci: update Tree.md [skip ci]" || echo "nothing to commit"
-        git push origin dev
+      - name: Commit & push Tree.md
+        run: |
+          git config --global user.name "GoldForge Bot"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Goldfruit/GoldForge.git
+          git add Tree.md
+          git commit -m "ci: update Tree.md [skip ci]" || echo "nothing to commit"
+          git push origin dev
