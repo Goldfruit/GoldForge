@@ -1,0 +1,1 @@
+Diese Vorlagen helfen dabei, bei der Erstellung von Issues und Pull Requests konsistente Informationen zu liefern und so den Review-Prozess zu vereinfachen.

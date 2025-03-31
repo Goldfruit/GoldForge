@@ -1,0 +1,1 @@
+Legt die Lizenzbedingungen für das Projekt fest, sodass Nutzer und Contributor wissen, unter welchen Bedingungen der Code verwendet werden darf.

@@ -1,0 +1,1 @@
+Dokumentiert die Änderungen und Verbesserungen in den verschiedenen Versionen des Projekts.
