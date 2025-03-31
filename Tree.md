@@ -5,7 +5,15 @@
 │       ├── deploy.yml
 │       └── tree.yml
 ├── .gitignore
+├── ATTRIBUTIONS.md
+├── AUTHORS.md
+├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
+├── ISSUE_TEMPLATE.md
+├── LICENSE.md
+├── PULL_REQUEST_TEMPLATE.md
 ├── README.md
+├── SECURITY.md
 ├── Tree.md
 ├── docker-compose.yml
 ├── goldanker_commands
@@ -31,5 +39,5 @@
 │   └── main.js
 └── vite.config.js
 
-8 directories, 23 files
+8 directories, 31 files
 ```
