@@ -1,0 +1,1 @@
+Beschreibt, wie Sicherheitslücken gemeldet werden können und welche Maßnahmen im Falle eines Sicherheitsproblems zu ergreifen sind.

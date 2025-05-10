@@ -1,0 +1,13 @@
+from pathlib import Path
+
+# Inhalt der requirements.txt
+requirements_content = """fastapi
+uvicorn[standard]
+pydantic
+"""
+
+# Speicherort für requirements.txt
+requirements_path = Path("/mnt/data/requirements.txt")
+requirements_path.write_text(requirements_content)
+
+requirements_path.name

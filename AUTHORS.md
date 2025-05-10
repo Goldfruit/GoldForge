@@ -1,0 +1,1 @@
+Diese Dateien dienen dazu, die Mitwirkenden oder externe Ressourcen/Tools zu würdigen und aufzuzählen.

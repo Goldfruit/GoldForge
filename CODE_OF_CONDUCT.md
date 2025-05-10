@@ -1,0 +1,1 @@
+Enthält einen Verhaltenskodex, der klarstellt, wie sich Mitwirkende verhalten sollten, um ein respektvolles Miteinander zu gewährleisten.
